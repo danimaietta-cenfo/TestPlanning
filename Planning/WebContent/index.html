@@ -1,0 +1,44 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+  	  <meta http-equiv="Content-Type" content="text/html">
+  	  <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      
+      <!-- css -->
+      <link type="text/css" rel="stylesheet" href="css/index.css">
+      <link type="text/css" rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css">
+  </head>
+  <body>
+  	  
+      <!--   <h1 onclick="validate()" class="card-panel red lighten-2">Hola mundo</h1> -->
+  	  <div ng-controller="ctrl1">
+  	  	<div id="bgimg"> </div>
+	  	<a href= "riskManagement.html" class = "btns1 btn btn-default btn-lg" role="button">Matriz de riesgos</a>
+	  	<a ng-click="validate()" class = "btns2 btn btn-default btn-lg" role="button">Valor ganado</a> 
+  	  </div>
+  		
+  	<!-- Angular -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>	
+  </body>
+  
+    <!--  Development -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/earnedValue.js"></script>
+    <!--  DWR -->
+  	<script type="text/javascript" src="/Planning/dwr/engine.js"></script>
+    <script type="text/javascript" src="/Planning/dwr/interface/StringUtil.js"></script>
+    <script type="text/javascript" src="/Planning/dwr/interface/ConnectionMongoDB.js"></script>
+  	<script type="text/javascript" src="/Planning/dwr/util.js"></script>
+  	
+  	<!--  JQuery -->
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+</html>

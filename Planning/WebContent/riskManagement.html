@@ -1,0 +1,48 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+  	<link type="text/css" rel="stylesheet" href="css/riskManagement.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+  	<div ng-controller="ctrl1">
+			<div id="bgimg">
+				<div class="whiteBox">
+				 <button ng-click="test()">Test</button>
+					<div class="table">
+						<table class="table">
+							<thead>
+							      <tr>
+							        <th>Description</th>
+							        <th>Probability</th>
+							        <th>Impact</th>
+							        <th>Result</th>
+							      </tr>
+							</thead>
+							<tbody>
+							<tr ng-repeat="r in risks">
+								<td ng-click="edit($index)" ng-model="description" class="editText">{{r.description}}</td>
+								<td>{{r.probability}}</td>
+								<td>{{r.impact}}</td>
+								<td>{{r.impact * (r.probability * 0.1)}}</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+	  		</div>
+  	</div>
+  	<!-- Angular -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  </body>
+  <!--  Development -->
+  <script type="text/javascript" src="js/riskManagement.js"></script>
+  <script type="text/javascript" src="/Planning/dwr/engine.js"></script>
+  <script type="text/javascript" src="/Planning/dwr/interface/RiskManagementDB.js"></script>
+  <script type="text/javascript" src="/Planning/dwr/util.js"></script>
+  <!--  JQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+  </html>
